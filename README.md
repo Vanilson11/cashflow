@@ -16,6 +16,12 @@ Dentre os pacotes NuGet utilizados, o **AutoMapper** é o responsável pelo mape
 - **Geração de Relatórios**: Capacidade de exportar relatórios detalhados para **PDF** e **Excel**, oferecendo uma análise visual e eficaz das despesas.
 - **RESTful API com Documentação Swagger**: Interface documentada que facilita a integração e o teste por parte dos desenvolvedores.
 
+### Construído com
+
+![dot-net-badge]
+![mysql-badge]
+![swagger-badge]
+
 ## Getting Started
 
 Para obter uma cópia local funcionando, siga estes passos simples.
@@ -40,3 +46,8 @@ Para obter uma cópia local funcionando, siga estes passos simples.
 
 <!-- Images -->
 [hero-image]: report-pdf-image.jpg
+
+<!-- Badges -->
+[dot-net-badge]: https://img.shields.io/badge/.NET-512BD4?logo=dotnet&logoColor=fff&style=flat-square
+[mysql-badge]: https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=fff&style=flat-square
+[swagger-badge]: https://img.shields.io/badge/Swagger-85EA2D?logo=swagger&logoColor=000&style=flat-square
