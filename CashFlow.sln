@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validators.Tests", "tests\V
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonTestsUtilities", "tests\CommonTestsUtilities\CommonTestsUtilities.csproj", "{555D612D-0627-40D8-AF45-AC35D154312E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseCases.Tests", "src\UseCases.Tests\UseCases.Tests.csproj", "{46731997-720F-475E-BFE6-4A88EEAF41E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.Test", "tests\WebApi.Test\WebApi.Test.csproj", "{41FA66A0-8C62-4761-BE14-53BA49E4AB43}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +65,14 @@ Global
 		{555D612D-0627-40D8-AF45-AC35D154312E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{555D612D-0627-40D8-AF45-AC35D154312E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{555D612D-0627-40D8-AF45-AC35D154312E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46731997-720F-475E-BFE6-4A88EEAF41E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46731997-720F-475E-BFE6-4A88EEAF41E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46731997-720F-475E-BFE6-4A88EEAF41E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46731997-720F-475E-BFE6-4A88EEAF41E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41FA66A0-8C62-4761-BE14-53BA49E4AB43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41FA66A0-8C62-4761-BE14-53BA49E4AB43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41FA66A0-8C62-4761-BE14-53BA49E4AB43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41FA66A0-8C62-4761-BE14-53BA49E4AB43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,5 +86,10 @@ Global
 		{E2E085D4-070F-4131-BD69-CFE0ADD26D37} = {691AF3C8-FD3F-4093-885F-C3E9620C034E}
 		{7802B0D1-B073-46B3-BD90-DAB56D6E1485} = {124E7EB3-264C-4860-9189-9E2B481C8978}
 		{555D612D-0627-40D8-AF45-AC35D154312E} = {124E7EB3-264C-4860-9189-9E2B481C8978}
+		{46731997-720F-475E-BFE6-4A88EEAF41E5} = {124E7EB3-264C-4860-9189-9E2B481C8978}
+		{41FA66A0-8C62-4761-BE14-53BA49E4AB43} = {124E7EB3-264C-4860-9189-9E2B481C8978}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF3CA18F-4738-4C89-B799-66AB03688CF7}
 	EndGlobalSection
 EndGlobal

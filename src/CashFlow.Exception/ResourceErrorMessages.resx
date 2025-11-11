@@ -120,11 +120,32 @@
   <data name="AMOUNT_MUST_BE_GREATER_THAN_ZERO" xml:space="preserve">
     <value>The amount must be greater than zero.</value>
   </data>
+  <data name="EMAIL_ALREADY_REGISTERED" xml:space="preserve">
+    <value>E-mail already registered.</value>
+  </data>
+  <data name="EMAIL_INVALID" xml:space="preserve">
+    <value>E-mail invalid.</value>
+  </data>
+  <data name="EMAIL_REQUIRED" xml:space="preserve">
+    <value>E-mail is required.</value>
+  </data>
   <data name="EXPENSE_CANNOT_BE_FOR_THE_FUTURE" xml:space="preserve">
     <value>Expense cannot be for the future.</value>
   </data>
   <data name="EXPENSE_NOT_FOUND" xml:space="preserve">
     <value>Expense not found.</value>
+  </data>
+  <data name="INVALID_LOGIN" xml:space="preserve">
+    <value>E-mail and/or password invalid.</value>
+  </data>
+  <data name="NAME_USER_REQUIRED" xml:space="preserve">
+    <value>The name off user is required.</value>
+  </data>
+  <data name="PASSWORD_EMPTY" xml:space="preserve">
+    <value>Password is required.</value>
+  </data>
+  <data name="PASSWORD_INVALID" xml:space="preserve">
+    <value>Sua senha deve ter no mínimo 8 caracteres, contendo pelo menos uma letra maiúscula, uma letra minúscula, um número e um caracter especial(ex: !, ?, *, #).</value>
   </data>
   <data name="PAYMENT_TYPE_NOT_VALID" xml:space="preserve">
     <value>Payment type is not valid.</value>
