@@ -1,27 +1,32 @@
-﻿using CashFlow.Domain.Reports;
+﻿using CashFlow.Domain.Extentions;
+using CashFlow.Domain.Reports;
 using CashFlow.Domain.Repositories.Expenses;
+using CashFlow.Domain.Services.LoggedUser;
 using ClosedXML.Excel;
-using CashFlow.Domain.Extentions;
 
 namespace CashFlow.Application.UseCases.Expenses.Reports.Excel;
 public class GetReportExpensesExcelUseCase : IGetReportExpensesExcelUseCase
 {
     private const string CURRENT_SYMBOL = "¢";
     private readonly IExpensesReadOnlyRepository _repository;
-    public GetReportExpensesExcelUseCase(IExpensesReadOnlyRepository repository)
+    private readonly ILoggedUser _loggedUser;
+    public GetReportExpensesExcelUseCase(IExpensesReadOnlyRepository repository, ILoggedUser loggedUser)
     {
         _repository = repository;
+        _loggedUser = loggedUser;
     }
     public async Task<byte[]> Execute(DateOnly month)
     {
-        var expenses = await _repository.FilterByMonth(month);
+        var loggedUser = await _loggedUser.Get();
+
+        var expenses = await _repository.FilterByMonth(loggedUser, month);
 
         if (expenses.Count == 0)
             return [];
 
         using var workbook = new XLWorkbook();
 
-        workbook.Author = "Vanilson Sousa";
+        workbook.Author = loggedUser.Name;
         workbook.Style.Font.FontSize = 12;
         workbook.Style.Font.FontName = "Times New Roman";
 
